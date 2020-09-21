@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+ 
+    <div style="margin: 25px;">
+        <h1 class="title">RESTful API</h1>
+        <br>
+        <h6 class='color' style="color:gray">API說明文件</h6>
+        <h6 class='color' style="color:gray">Created by Allen Xie</h6>
+    </div>
+    
+    <hr>
+    
+    <div class="alert alert-secondary" role="alert">
+        <button class='button' style="color: white; background-color: sandybrown;">GET</button>
+         /tests
+    </div>
+    <div class="alert alert-secondary" role="alert">
+        <button class="button" style="color: white; background-color: sandybrown;">GET</button>
+         /test/{特定欄位}
+    </div>
+    <div class="alert alert-secondary" role="alert">
+        <button class="button" style="color: white; background-color :sandybrown;">PATHCH</button>
+         /test/{特定欄位}
+    </div>
+    <hr>
+    <br>
+
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+                    範例說明
+                </button>
+                </h2>
+            </div>
+      
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample" style="width: 50%;">
+                <div class="card-body">
+                    <p>可以根據以下欄位對照去抓取需要的資料</p>
+                    <table class="table table-striped table-dark" style="text-align: center;">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col">中文欄位名稱</th>
+                            <th scope="col">英文欄位名稱</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>課程</td>
+                            <td>title</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>開始~結束日期</td>
+                            <td>start_date</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>時數</td>
+                            <td>hours</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>地點</td>
+                            <td>location</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>價格</td>
+                            <td>price</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <p>抓取全部資料</p>
+                </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <img src="b.png" alt="" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <p>抓取特定資料</p>
+                </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <img src="" alt="" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <!-- optional javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
